@@ -41,7 +41,7 @@ class CouponCollector:
         return random_number
     
 
-n = int(input("Enter number of distinct coupons: "))()
+n = int(input("Enter number of distinct coupons: "))
 
 total_unique_number = CouponCollector.collect_coupon(n)
 
