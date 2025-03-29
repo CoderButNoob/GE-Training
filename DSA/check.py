@@ -1,8 +1,9 @@
-d= [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"},{"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-unique = set() #set to  add only unique value
-
-for items in d:
-    for value in items.values():
-        unique.add(value)
-
-print(unique)
+d = {   'A' : [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        'B' : 34,
+        'C' : 12,
+        'D' : [7, 8, 9, 6, 4] }
+count = 0
+for x in d :
+    if isinstance(d[x],list):
+        count+=1
+print(count)
